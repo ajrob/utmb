@@ -1,0 +1,98 @@
+$containerWidth: 960px;
+
+$mainNav: #333;
+$mainNavFontColor: #aaa;
+$mainNavHeight: 50px;
+$mainColor: #FF3200;
+
+$imageBarHeight: 15em;
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.main-nav {
+  background: $mainNav;
+  color: $mainNavFontColor;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  height: $mainNavHeight;
+  z-index: 200;
+}
+
+.wrap {
+  width: $containerWidth;
+  margin: 0 auto;
+}
+
+.nav-home {
+  display: inline-block;
+  line-height: $mainNavHeight;
+  font-size: 1.5em;
+  color: $mainColor;
+  letter-spacing: 1px;
+
+  img {
+    display: inline-block;
+  }
+}
+
+.nav-site {
+  float: right;
+  display: inline;
+  line-height: $mainNavHeight;
+
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+
+    a {
+      padding: 0 8px;
+      text-transform: uppercase;
+      display: inline-block;
+      letter-spacing: 1px;
+      color: $mainNavFontColor;
+    }
+  }
+}
+
+.image-bar {
+  margin: $mainNavHeight 0 0 0;
+  padding: 10px 0 0 0;
+  height: $imageBarHeight;
+  position: relative;
+}
+
+.image-bar-gradient {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.10) 60%, rgba(0,0,0,0.25) 100%);
+  height: $imageBarHeight;
+}
+
+.trail-info {
+  position: absolute;
+  bottom: 0px;
+}
+
+.region {
+  background: $mainColor;
+  border-radius: 2px;
+  padding: 3px 10px;
+  color: #fff;
+}
+
+.trail {
+  color: #aaa;
+  font-weight: 100;
+}
+
+.content {
+  
+}

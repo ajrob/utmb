@@ -1,18 +1,23 @@
-<div class="logo-bar">
-  <img src="../images/utmb_logo.png" alt="Utah Mountain Biking logo" class="logo-img">
-  <h2>Utah Mountain Biking</h2>
+<nav class="main-nav">
+  <div class="wrap">
+    <a class="nav-home" href="/">
+      <img src="../images/utah_logo.png" alt="Utah Mountain Biking"> Utah Mountain Biking
+    </a>
+    <ul class="nav-site">
+      <li>
+        <a href="#">Trails</a>
+      </li>
+      <li>
+        <a href="#">First Aid</a>
+      </li>
+      <li>
+        <a href="#">Store</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="padding-top: 100px;">
+  <a ui-sref="region">Region</a>
 </div>
-<div class="icon-bar three-up">
-  <a class="item">
-    <i class="icon ion-map icon-nav"></i>
-    <label>Trails</label>
-  </a>
-  <a class="item">
-    <i class="icon ion-map icon-nav"></i>
-    <label>First Aid</label>
-  </a>
-  <a class="item">
-    <i class="icon ion-map icon-nav"></i>
-    <label>Repair</label>
-  </a>
-</div>
+<div class="ui-view"></div>
